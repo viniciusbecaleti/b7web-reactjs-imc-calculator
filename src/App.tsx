@@ -90,7 +90,7 @@ export function App(){
               </button>
             </form>
           </div>
-          <div className={`flex mt-[${result ? '35px' : '0'}] md:flex-1 md:mt-0`}>
+          <div className={`flex md:flex-1`}>
             {!result ? (
               <div className="flex-1 grid grid-cols-1 gap-5 sm:grid-cols-2">
                 {levels.map(level => (
@@ -98,7 +98,7 @@ export function App(){
                 ))}
               </div>
             ) : (
-              <div data-result className="relative flex-1 flex flex-col md:pl-[35px]">
+              <div data-result className="relative flex-1 flex flex-col mt-[35px] md:pl-[35px] md:mt-0">
                 <button
                   className="absolute top-0 left-[50%] translate-x-[-50%] bg-[#227c9d] w-[70px] h-[70px] rounded-[50%] flex items-center justify-center md:top-[50%] md:left-0 translate-y-[-50%] md:translate-x-0 hover:opacity-90"
                   type="button"
