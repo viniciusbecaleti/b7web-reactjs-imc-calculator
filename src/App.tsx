@@ -67,7 +67,7 @@ export function App(){
             >
               <Input
                 type="number"
-                placeholder="165"
+                placeholder="165cm"
                 value={height ? height : ''}
                 callback={(value) => setHeight(value)}
                 disabled={!!result}
@@ -75,7 +75,7 @@ export function App(){
 
               <Input
                 type="number"
-                placeholder="60"
+                placeholder="60kg"
                 value={weight ? weight : ''}
                 callback={(value) => setWeight(value)}
                 disabled={!!result}
